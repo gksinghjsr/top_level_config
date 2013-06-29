@@ -1,6 +1,13 @@
 # TopLevelConfig
 
-TODO: Write a gem description
+Add a top_level.yml config file with the default constants. These values are inherited in every environments
+constant file. However, these are overridden by the values in the environments constant file.
+
+As a result you you only need keep values in the environment constant file for those constants which need to be different
+from default values.
+
+In the GlobalConstant file, call the method TopLevelConfig.get_environment_constants to get the overall environments
+ constants.
 
 ## Installation
 
